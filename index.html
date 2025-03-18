@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fontawesome-free-6.6.0-web/css/all.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="swiper/swiper-bundle.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="main-head">
+            <div class="logo-name">
+                <div class="logo">
+                    <img src="https://via.placeholder.com/60x60" alt="LOGO" class="logo-img">
+                </div>
+                <div class="company-info-head">
+                    <h1>Название компании</h1>
+                    <p>Транспортно-логистическая компания</p>
+                </div>
+            </div>
+            <div class="contact-call">
+                <div class="contact-info-head">
+                    <p>Мы на связи 24/7</p>
+                    <a href="tel:+998935120436"><i class="fa-solid fa-phone"></i> +998 93 512-04-36</a>
+                </div>
+                <div class="actions">
+                    <button class="btn1" id="btn1">Заказать звонок</button>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <div class="menu-container">
+                <input type="checkbox" id="menu-toggle" style="visibility: hidden;">
+                <label for="menu-toggle" class="menu-icon">&#9776;</label>
+                <ul class="menu">
+                    <li><a href="index.html">Главная</a></li>
+                    <li>
+                        <a href="#about">О компании</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Услуги <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="submenu">
+                            <li><a href="uslugi/transportnye-uslugi/index.php">Транспортные услуги</a></li>
+                            <li><a href="uslugi/tamozhennoe-oformlenie/index.php">Таможенное оформление</a></li>
+                            <li><a href="uslugi/ekspedirovanie/index.php">Экспедирование</a></li>
+                            <li><a href="uslugi/strahovanie-gruzov/index.php">Страхование грузов</a></li>
+                            <li><a href="uslugi/hranenie-gruzov/index.php">Хранение грузов</a></li>
+                            <li><a href="uslugi/upakovka-gruzov/index.php">Упаковка грузов</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Грузоперевозки <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="submenu">
+                            <li><a href="grupoperevozki/avtomobilnye-perevozki/index.php">Автомобильные перевозки</a></li>
+                            <li><a href="grupoperevozki/morskie-perevozki/index.php">Морские перевозки</a></li>
+                            <li><a href="grupoperevozki/aviaperevozki/index.php">Авиаперевозки</a></li>
+                            <li><a href="grupoperevozki/zheleznodorozhnye-perevozki/index.php">Железнодорожные перевозки</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="tarify/index.php">Тарифы</a></li>
+                    <li><a href="price-list/index.php">Прайс-лист</a></li>
+                    <li><a href="info/index.php">Информация</a></li>
+                    <li><a href="contacts/index.php">Контакты</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div id="call-form" class="main-page">
+        <div class="main-form">
+            <div class="main-form-call">
+                <h1>Заказать звонок</h1>
+                <h3>Наш менеджер свяжется с вами в удобное для вас время</h3>
+    
+                <form action="">
+                    <span>
+                        <label for=""><i class="fa-solid fa-user"></i> Ваше имя:</label>
+                        <input type="text" name="" id="" class="main-input" placeholder="Your name">
+                    </span>
+                    <span>
+                        <label for=""><i class="fa-solid fa-phone"></i> Телефон:</label>
+                        <input type="text" name="" id="" class="main-input" placeholder="Phone number">
+                    </span>
+                    <span>
+                        <label for=""><i class="fa-solid fa-comment"></i> Комментарий:</label> <br>
+                        <textarea name="" id="" placeholder="Comment (optional)"></textarea>
+                    </span>
+                    <span class="check-box-span">
+                        <input type="checkbox" name="" id="" class="main-checkbox" checked>
+                        <label for="" class="main-checkbox-text">Ознакомлен(а) с пользовательским соглашением</label>
+                    </span>
+                    <button type="submit">Отправить</button>
+                </form>
+            </div>
+            <span class="close-icon" id="close-icon">
+                <i class="fa-solid fa-xmark close-form-icon"></i>
+            </span>
+    
+            <div class="main-photo">
+                <img src="photos/operator.jpg" alt="Photo">
+            </div>
+        </div>
+    </div>
+
+    <div class="main1">
+        <div class="main-img">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="photos/morskie.jpg" alt="q">
+                            <div class="swiper-text">
+                                <h1>Морские перевозки в контейнерах</h1>
+                                <p>Упрощенная процедура погрузки и разгрузки</p>
+
+                                <button class="btn1" id="btn1">Рассчитать стоимость</button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="photos/main-turck.jpg" alt="q">
+                            <div class="swiper-text">
+                                <h1>Доставка грузов по России и миру</h1>
+                                <p>Собственный грузовой терминал</p>
+
+                                <button class="btn1" id="btn1">Рассчитать стоимость</button>
+                            </div>
+                        </div>
+                </div>
+                <!-- <div class="swiper-button-next nav-btn"></div>
+                <div class="swiper-button-prev nav-btn"></div> -->
+                <div class="swiper-pagination"></div>
+              </div>
+        </div>
+
+        <div class="boxes">
+            <div>
+                <span>
+                    <i class="fa-solid fa-handshake"></i>
+                </span>
+                <span>
+                    <h1>Выгодные</h1>
+                    <h2>тарифы</h2>
+                </span>
+            </div>
+            <div>
+                <span>
+                    <i class="fa-solid fa-map-location-dot"></i>
+                </span>
+                <span>
+                    <h1>Оптимальные</h1>
+                    <h2>маршруты</h2>
+                </span>
+            </div>
+            <div>
+                <span>
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                </span>
+                <span>
+                    <h1>Мониторинг</h1>
+                    <h2>груза в пути</h2>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="main2">
+        <h1 class="header_h1">Виды перевозок</h1>
+
+        <div class="tips">
+            <a href="grupoperevozki/avtomobilnye-perevozki/index.php">
+                <div class="tip1">
+                    <h1>Автомобильные перевозки</h1>
+                </div>
+            </a>
+            <a href="grupoperevozki/aviaperevozki/index.php">
+                <div class="tip2">
+                    <h1>Авиаперевозки</h1>
+                </div>
+            </a>
+            <a href="grupoperevozki/morskie-perevozki/index.php">
+                <div class="tip3">
+                    <h1>Морские перевозки</h1>
+                </div>
+            </a>
+            <a href="grupoperevozki/zheleznodorozhnye-perevozki/index.php">
+                <div class="tip4">
+                    <h1>Железнодорожные перевозки</h1>
+                </div>
+            </a>
+            <a href="">
+                <div class="tip5">
+                    <h1>Мультимодальные грузоперевозки</h1>
+                </div>
+            </a>
+            <a href="">
+                <div class="tip6">
+                    <h1>Сборные грузы</h1>
+                </div>
+            </a>
+        </div>
+
+        <button id="btn1" class="all_tips">Все виды</button>
+    </div>
+
+    <div class="main3">
+        <h1 class="main3_h1">Наши услуги</h1>
+
+        <div class="uslugi_div">
+            <div>
+                <span>
+                    <span class="logo-span">
+                        <i class="fa-solid fa-truck logo-icon"></i>
+                    </span>
+                
+                    <h1 class="uslugi_h1">Транспортные услуги</h1>
+                    <p class="uslugi_p">Все транспортные перевозки мы осуществляем на собственном или на арендованном транспорте.</p>
+                </span>
+
+                <span class="bspan">
+                    <a href="uslugi/transportnye-uslugi/index.php" class="uslugi_a">Подробнее <i class="fa-solid fa-arrow-right"></i></a>
+                </span>
+            </div>
+            <div>
+                <span>
+                    <span class="logo-span">
+                        <i class="fa-solid fa-box logo-icon"></i>
+                    </span>
+                
+                    <h1 class="uslugi_h1">Таможенное оформление</h1>
+                    <p class="uslugi_p">Для оформления документации, обращение к нам будет наилучшим решением.</p>
+                </span>
+
+                <span class="bspan">
+                    <a href="uslugi/tamozhennoe-oformlenie/index.php" class="uslugi_a">Подробнее <i class="fa-solid fa-arrow-right"></i></a>
+                </span>
+            </div>
+            <div>
+                <span>
+                    <span class="logo-span">
+                        <i class="fa-solid fa-user logo-icon"></i>
+                    </span>
+                
+                    <h1 class="uslugi_h1">Экспедирование</h1>
+                    <p class="uslugi_p">Мы гарантируем своевременность доставки груза любого типа до заказчика.</p>
+                </span>
+
+                <span class="bspan">
+                    <a href="uslugi/ekspedirovanie/index.php" class="uslugi_a">Подробнее <i class="fa-solid fa-arrow-right"></i></a>
+                </span>
+            </div>
+            <div>
+                <span>
+                    <span class="logo-span">
+                        <i class="fa-solid fa-shield logo-icon"></i>
+                    </span>
+                
+                    <h1 class="uslugi_h1">Страхование грузов</h1>
+                    <p class="uslugi_p">Договор страхования может заключаться на каждую отдельную перевозку.</p>
+                </span>
+
+                <span class="bspan">
+                    <a href="uslugi/strahovanie-gruzov/index.php" class="uslugi_a">Подробнее <i class="fa-solid fa-arrow-right"></i></a>
+                </span>
+            </div>
+            <div>
+                <span>
+                    <span class="logo-span">
+                        <i class="fa-solid fa-house-circle-check logo-icon"></i>
+                    </span>
+                
+                    <h1 class="uslugi_h1">Хранение грузов</h1>
+                    <p class="uslugi_p">Одно из приоритетных направлений в деятельности компании.</p>
+                </span>
+
+                <span class="bspan">
+                    <a href="uslugi/hranenie-gruzov/index.php" class="uslugi_a">Подробнее <i class="fa-solid fa-arrow-right"></i></a>
+                </span>
+            </div>
+            <div>
+                <span>
+                    <span class="logo-span">
+                        <i class="fa-solid fa-box-open logo-icon"></i>
+                    </span>
+                
+                    <h1 class="uslugi_h1">Упаковка грузов</h1>
+                    <p class="uslugi_p">Позволит гарантировать сохранность в процессе проведения погрузочно-разгрузочных работ.</p>
+                </span>
+
+                <span class="bspan">
+                    <a href="uslugi/upakovka-gruzov/index.php" class="uslugi_a">Подробнее <i class="fa-solid fa-arrow-right"></i></a>
+                </span>
+            </div>
+        </div>
+
+        <button class="all_tips" id="btn1">Все услуги</button>
+    </div>
+
+    <div class="main4" id="about">
+        <div class="container-about">
+            <div class="content-about">
+                <div class="text-about">
+                    <h1>Информация</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, quo voluptates deserunt vel pariatur laudantium,
+                        voluptate est laboriosam placeat quae repellat quas culpa facere quisquam,
+                        maiores eligendi voluptatum deleniti delectus.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, quo voluptates deserunt vel pariatur laudantium,
+                        voluptate est laboriosam placeat quae repellat quas culpa facere quisquam,
+                        maiores eligendi voluptatum deleniti delectus.</p> <br>
+                    <p></p><br>
+                    <a href="info/index.php">Подробнее</a>
+                </div>
+                <div class="image">
+                    <img src="photos/img5.jpg" alt="About">
+                </div>
+            </div>
+
+            <div class="about-boxes">
+                <div>
+                    <span>
+                        <i class="fa-solid fa-bullseye"></i>
+                    </span>
+                    <span>
+                        <h1>15 лет</h1>
+                        <h2>Успешной деятельности</h2>
+                    </span>
+                </div>
+                <div>
+                    <span>
+                        <i class="fa-solid fa-users"></i>
+                    </span>
+                    <span>
+                        <h1>200+</h1>
+                        <h2>Профессионалов в команде</h2>
+                    </span>
+                </div>
+                <div>
+                    <span>
+                        <i class="fa-regular fa-handshake"></i>
+                    </span>
+                    <span>
+                        <h1>1 500 +</h1>
+                        <h2>Постоянных клиентов</h2>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- answer question page -->
+
+    <div class="main5">
+        <h1 class="m5_h1">С нами легко сотрудничать</h1>
+
+        <div class="info-boxes">
+            <div>
+                <span>
+                    <i class="fa-solid fa-1"></i>
+                </span>
+                <span>
+                    <h1>Оставляете заявку</h1>
+                    <h2>Указываете какой вид работ/товара Вас интересует</h2>
+                </span>
+            </div>
+            <div>
+                <span>
+                    <i class="fa-solid fa-2"></i>
+                </span>
+                <span>
+                    <h1>Связывается менеджер</h1>
+                    <h2>Вам предоставляется персональный менеджер</h2>
+                </span>
+            </div>
+            <div>
+                <span>
+                    <i class="fa-solid fa-3"></i>
+                </span>
+                <span>
+                    <h1>Заключаем договор</h1>
+                    <h2>Заключаем договор, производите оплату</h2>
+                </span>
+            </div>
+            <div>
+                <span>
+                    <i class="fa-solid fa-4"></i>
+                </span>
+                <span>
+                    <h1>Перевозим груз</h1>
+                    <h2>Выполняем услуги согласно договору</h2>
+                </span>
+            </div>
+        </div>
+
+        <button class="all_tips" id="btn1" style="width: max-content;">Оставить заявку</button></a>
+    </div>
+
+    <div class="popular-countries">
+        <h1 class="countries_h1">Популярные направления</h1>
+        <div class="country-cards">
+            <div>
+                <span class="span-card">
+                    <span class="logo-span-cards">
+                        <img src="photos/russia.jpg" width="155px" alt="">
+                    </span>
+                
+                    <h1 class="cards_h1">Россия</h1>
+                </span>
+
+                <span class="bspan">
+                    <a href="" class="uslugi_a">Подробнее <i class="fa-solid fa-arrow-right"></i></a>
+                </span>
+            </div>
+            <div>
+                <span class="span-card">
+                    <span class="logo-span-cards">
+                        <img src="photos/china.jpg" width="165px" alt="">
+                    </span>
+                
+                    <h1 class="cards_h1">КНР</h1>
+                </span>
+
+                <span class="bspan">
+                    <a href="" class="uslugi_a">Подробнее <i class="fa-solid fa-arrow-right"></i></a>
+                </span>
+            </div>
+            <div>
+                <span class="span-card">
+                    <span class="logo-span-cards">
+                        <img src="photos/uzbekistan.jpg" width="170px" alt="">
+                    </span>
+                
+                    <h1 class="cards_h1">Узбекистан</h1>
+                </span>
+
+                <span class="bspan">
+                    <a href="" class="uslugi_a">Подробнее <i class="fa-solid fa-arrow-right"></i></a>
+                </span>
+            </div>
+            <div class="card-uae">
+                <span class="span-card">
+                    <span class="logo-span-cards">
+                        <img src="photos/uae.jpg" width="155px" alt="">
+                    </span>
+                
+                    <h1 class="cards_h1">ОАЭ</h1>
+                </span>
+
+                <span class="bspan">
+                    <a href="" class="uslugi_a">Подробнее <i class="fa-solid fa-arrow-right"></i></a>
+                </span>
+            </div>
+            <div>
+                <span class="span-card">
+                    <span class="logo-span-cards">
+                        <img src="photos/turkey.jpg" width="155px" alt="">
+                    </span>
+                
+                    <h1 class="cards_h1">Турция</h1>
+                </span>
+
+                <span class="bspan">
+                    <a href="" class="uslugi_a">Подробнее <i class="fa-solid fa-arrow-right"></i></a>
+                </span>
+            </div>
+            <div>
+                <span class="span-card">
+                    <span class="logo-span-cards">
+                        <img src="photos/kazakhstan.jpg" width="165px" alt="">
+                    </span>
+                
+                    <h1 class="cards_h1">Казахстан</h1>
+                </span>
+
+                <span class="bspan">
+                    <a href="" class="uslugi_a">Подробнее <i class="fa-solid fa-arrow-right"></i></a>
+                </span>
+            </div>
+        </div>    
+        
+        <button style="width: max-content;" class="all_tips" id="btn1">Все направления</button>
+    </div>
+
+    <div class="aq">
+        <div class="contacts-div">
+            <h1>Отвечаем, опережая ваши вопросы</h1>
+
+            <div class="contact-call-bottom">
+                <div class="contact-info-bottom">
+                    <p>Звоните нам 24/7:</p>
+                    <a href="tel:+70000000000">+7 (000) 000 00 00 <i class="fa-brands fa-telegram"></i></a>
+                </div>
+                <h2>или задайте вопрос на сайте и мы Вам перезвоним</h2>
+                <div class="actions-bottom">
+                    <button class="btn-bottom" id="btn1">Заказать звонок</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-answer">
+            <div class="q-block q_block" id="q-block">
+                <div class="question" id="question">
+                    <h2>Какие данные нужны для расчета стоимости перевозки?</h2>
+                    <i class="fa-solid fa-angle-down down_icon" id="down_icon"></i>
+                </div>
+                <div class="answer" id="answer">
+                    <h2>Сделанные на базе интернет-аналитики выводы могут быть указаны как претенденты на роль ключевых факторов.</h2>
+                </div>
+            </div>
+            <div class="q-block q_block" id="q-block">
+                <div class="question" id="question">
+                    <h2>Как рассчитать объем груза?</h2>
+                    <i class="fa-solid fa-angle-down down_icon"></i>
+                </div>
+                <div class="answer" id="answer">
+                    <h2>Сделанные на базе интернет-аналитики выводы могут быть указаны как претенденты на роль ключевых факторов.</h2>
+                </div>
+            </div>
+            <div class="q-block q_block" id="q-block">
+                <div class="question" id="question">
+                    <h2>Как и когда осуществляется оплата?</h2>
+                    <i class="fa-solid fa-angle-down down_icon"></i>
+                </div>
+                <div class="answer" id="answer">
+                    <h2>Сделанные на базе интернет-аналитики выводы могут быть указаны как претенденты на роль ключевых факторов.</h2>
+                </div>
+            </div>
+            <div class="q-block q_block" id="q-block">
+                <div class="question" id="question">
+                    <h2>Как рассчитать объем груза?</h2>
+                    <i class="fa-solid fa-angle-down down_icon"></i>
+                </div>
+                <div class="answer" id="answer">
+                    <h2>Сделанные на базе интернет-аналитики выводы могут быть указаны как претенденты на роль ключевых факторов.</h2>
+                </div>
+            </div>
+            <div class="q-block q_block" id="q-block">
+                <div class="question" id="question">
+                    <h2>Можем ли мы получить разовую консультацию?</h2>
+                    <i class="fa-solid fa-angle-down down_icon"></i>
+                </div>
+                <div class="answer" id="answer">
+                    <h2>Сделанные на базе интернет-аналитики выводы могут быть указаны как претенденты на роль ключевых факторов.</h2>
+                </div>
+            </div>
+            <div class="q-block q_block" id="q-block">
+                <div class="question" id="question">
+                    <h2>Какие документы требуются для таможенного оформления?</h2>
+                    <i class="fa-solid fa-angle-down down_icon"></i>
+                </div>
+                <div class="answer" id="answer">
+                    <h2>Сделанные на базе интернет-аналитики выводы могут быть указаны как претенденты на роль ключевых факторов.</h2>
+                </div>
+            </div>
+            <div class="q-block q_block" id="q-block">
+                <div class="question" id="question">
+                    <h2>Есть ли у вас собственные склады консолидации?</h2>
+                    <i class="fa-solid fa-angle-down down_icon"></i>
+                </div>
+                <div class="answer" id="answer">
+                    <h2>Сделанные на базе интернет-аналитики выводы могут быть указаны как претенденты на роль ключевых факторов.</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="main-footer">
+            <div class="contacts">
+                <h1>Контакты</h1>
+                <span>
+                    <h3>Телефон горячей линии:</h3>
+                    <h2>+998 00 000 00 00 <i class="fa-brands fa-telegram"></i></h2>
+                    <h2>+998 00 000 00 00 <i class="fa-brands fa-whatsapp"></i></h2>
+    <br>
+                    <h3>Адрес офиса:</h3>
+                    <h2>undefined</h2>
+    <br>
+                    <h3>E-mail:</h3>
+                    <h2>mail@example.com</h2>
+    <br>
+                    <h3>График работы офиса:</h3>
+                    <h2>Пн-Пт с 9:00 до 18:00 <br>
+                        Суббота с 10:00 до 17:00 <br>
+                        Воскресенье - выходной</h2>
+                </span>
+            </div>
+            <div class="pages-link">
+                <h1>Услуги</h1>
+    
+                <span>
+                    <a href="index.html">Главная</a>
+                    <a href="#about">О компании</a>
+                    <a href="info/index.php">Услуги</a>
+                    <a href="info/index.php">Грузоперевозки</a>
+                    <a href="tarify/index.php">Тарифы</a>
+                    <a href="price-list/index.php">Прайс-лист</a>
+                    <a href="info/index.php">Информация</a>
+                    <a href="contacts/index.php">Контакты</a>
+                </span>
+            </div>
+            <div class="form-call">
+                <h1>Получите бесплатную <br> консультацию </h1>
+                <h4>Менеджер свяжется с вами в удобное для вас время <i class="fa-solid fa-phone"></i></h4>
+    
+                <form action="">
+                    <label for=""><i class="fa-solid fa-user"></i> Ваше имя:</label>
+                    <input type="text" name="" id="" class="input" placeholder="Your name">
+                    <label for=""><i class="fa-solid fa-phone"></i> Телефон:</label>
+                    <input type="text" name="" id="" class="input" placeholder="Phone number">
+                    <span>
+                        <input type="checkbox" name="" id="" class="checkbox" checked>
+                        <label for="" class="checkbox-text">Ознакомлен(а) с пользовательским соглашением</label>
+                    </span>
+                    <button type="submit">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+    <script src="swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        centeredSlides: false,
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        });
+    </script>
+</body>
+</html>
